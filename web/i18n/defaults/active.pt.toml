@@ -1,0 +1,244 @@
+#default localiztion file for portugues
+
+# the name of this language, in its language. Used for language picking
+LanguageName = "Portugues"
+
+# generic terms
+GenericConfirm = "Sim"
+GenericGoBack = "Voltar"
+GenericSave = "Salvar"
+GenericCreate = "Criar"
+GenericSubmit = "Entrar"
+GenericPreview = "Previa"
+GenericLanguage = "Linguagem"
+GenericOpenLink = "Abrir Link"
+
+PageNotFound = "A requisição não foi encontrada."
+
+PubKeyRefPlaceholder = "@                                            .ed25519"
+
+# roles
+RoleMember = "Membro"
+RoleModerator = "Moderador"
+RoleAdmin = "Administrador"
+
+# navigation labels (should be single words or as short as possible)
+NavAdminLanding = "Inicio"
+NavAdminDashboard = "Dashboard"
+NavAdminInvites = "Convites"
+NavAdminNotices = "Noticias"
+
+# Error messages
+ErrorAuthBadLogin = "As credenciais de autenticação fornecidas (nome de usuário ou senha) estão incorretas."
+ErrorNotFound = "O banco de dados não conseguiu encontrar o item em questão."
+ErrorAlreadyAdded = "A chave publica <strong>{{.Key}}</strong> já está listada."
+ErrorPageNotFound = "A pagina requisitada <strong>({{.Path}})</strong> não foi encontrada"
+ErrorNotAuthorized = "Você não está autorizado para acessar essa pagina."
+ErrorForbidden = "A requisição não pode ser executada por falta de privilegio ({{.Details}})"
+ErrorBadRequest = "Houve um problema na Requesição: {{.Where}} ({{.Details}})"
+ErrorPasswordDidntMatch = "As senhas não conhecidem."
+ErrorPasswordTooShort = "A nova senha é muito pequena. A senha precisa ser no minimo 10 caracteres."
+ErrorPasswordLeaked = "The new password was found on the insecure password list of have-i-been-pwned. You need to choose a different one."
+
+
+# TODO: might be obsolete with notices
+LandingTitle = "Minha pagina"
+LandingWelcome = "Boas vindas"
+
+# authentication
+################
+
+AuthTitle = "Autenticação do menbro"
+AuthWelcome = "Se você for membro desta sala, poderá acessar o painel interno. Clique no método de login de sua preferência abaixo:" 
+
+AuthSignIn = "Entrar"
+AuthSignOut = "Sair"
+
+# auth with ssb
+AuthWithSSBTitle = "Entrar com SSB"
+AuthWithSSBInstruct = "Método fácil e seguro, se seu aplicativo SSB for compatível." 
+AuthWithSSBWelcome = "Para entrar com sua identidade SSB armazenada neste dispositivo, pressione o botão abaixo que abrirá um aplicativo SSB compatível, se estiver instalado."
+AuthWithSSBInstructQR = "Se o seu aplicativo SSB estiver em outro dispositivo, você pode escanear o seguinte código QR para entrar com a identidade SSB desse dispositivo."
+AuthWithSSBError = "Falha no login. Certifique-se de usar um aplicativo SSB compatível com esse método de login e clique no botão acima um minuto após a página ser aberta." 
+
+# auth with password
+AuthFallbackTitle = "Login com Senha"
+AuthFallbackWelcome = "O login com nome de usuário e senha só é possível se o administrador tiver fornecido um, porque não oferecemos suporte para registro de usuário."
+AuthFallbackInstruct = "Este método é uma alternativa aceitável, se você tiver um nome de usuário e uma senha." 
+
+AuthFallbackNewPassword="Nova Senha"
+AuthFallbackRepeatPassword="Repetir Senha"
+AuthFallbackPasswordChangeFormTitle = "Mudar Senha"
+AuthFallbackPasswordChangeWelcome = "Aqui você pode alterar sua senha substituta. Certifique-se de que ela tenha mais de 10 caracteres. Por meio da repetição, garantimos que você não a digite acidentalmente incorretamente. Além disso, usamos a pesquisa de <a href = 'https: // haveibeenpwned. com '> haveibeenpwned.com </a> para garantir que você não use acidentalmente uma senha fraca. " 
+AuthFallbackPasswordUpdated = "A senha foi atualizada. Agora você pode usá-la para fazer login." 
+AdminMemberPasswordResetLinkCreatedTitle = "Token de redefinição de senha criado"
+AdminMemberPasswordResetLinkCreatedInstruct = "O token de redefinição foi criado. Envie-o ao membro por alguns meios (como e-mail ou outro canal secundário adequado). Ao abri-lo, eles poderão escolher uma nova senha para si próprios."
+
+
+# general dashboard stuff
+#########################
+
+AdminDashboardTitle = "Dashboard"
+AdminDashboardRoomID = "O Id desta sala é:"
+
+# privacy modes
+###############
+
+ModeOpen = "Abrir"
+ModeCommunity = "Comunidade"
+ModeRestricted = "Restricted"
+
+SetPrivacyModeTitle = "Modificar mode de privacidade"
+PrivacyModesTitle = "Modo de privacidade"
+RoomsSpecification = "2 especificação de sala"
+ExplanationPrivacyModes = "O modo de privacidade desta sala determina quem pode criar convites e quem pode se conectar à sala. Para obter mais informações, consulte o"
+
+ExplanationOpen = "Abra os códigos de convite, qualquer pessoa pode se conectar "
+ExplanationCommunity = "Os membros podem criar convites, qualquer pessoa pode se conectar "
+ExplanationRestricted = "Apenas administradores / mods podem criar convites, apenas membros podem se conectar "
+
+DefaultLanguageTitle = "Linguagem Padrão"
+ExplanationDefaultLanguage = "A opção de idioma padrão controla o idioma da interface da web da sala exibido para os visitantes que visitam pela primeira vez. As opções de idiomas disponíveis são definidas pelos arquivos de tradução instalados."
+SetDefaultLanguageTitle = "Modificar Linguagem padrão"
+
+Settings = "Configurações"
+
+# banned dashboard
+##################
+
+AdminDeniedKeysTitle = "Banido"
+AdminDeniedKeysWelcome = "Esta página pode ser usada para banir IDs SSB para que eles não possam mais acessar a sala." 
+AdminDeniedKeysAdd = "Adicionar"
+AdminDeniedKeysAdded = "A chave foi adicionada à lista."
+AdminDeniedKeysRemove = "Remover"
+AdminDeniedKeysComment = "Comentar"
+AdminDeniedKeysCommentDescription = "A pessoa que adicionou este banimento adicionou o seguinte comentário "
+AdminDeniedKeysRemoveConfirmWelcome = "Tem certeza que deseja remover este banimento? Eles poderão acessar a sala novamente."
+AdminDeniedKeysRemoved = "A chave foi removida da lista e, portanto, não está mais banida."
+
+# members dashboard
+###################
+
+AdminMembersTitle = "Membros"
+AdminMembersWelcome = "Aqui você pode ver todos os membros da sala e maneiras de adicionar novos (por seu SSB ID) ou remover os existentes."
+AdminMembersAdd = "Adicionar"
+AdminMembersSelf = "Este é você"
+
+AdminMembersRemoveConfirmTitle = "Confirme a remoção do membro"
+AdminMembersRemoveConfirmWelcome = "Tem certeza que deseja remover este membro? Eles perderão seu apelido, se houver. "
+
+AdminMemberDetailsTitle = "Detalhes Membro"
+AdminMemberDetailsSSBID = "SSB Identifier"
+AdminMemberDetailsRole = "Permission level"
+AdminMemberDetailsAliases = "Aliases"
+AdminMemberDetailsAliasRevoke = "Revoke"
+AdminMemberDetailsAliasRevoked = "Alias was revoked"
+AdminMemberDetailsInitiatePasswordChange = "Re-set Fallback password"
+AdminMemberDetailsChangePassword = "Change password"
+AdminMemberDetailsCreatePasswordResetLink = "Create password reset link"
+AdminMemberDetailsExclusion = "Exclusion from this room"
+AdminMemberDetailsRemove = "Remove member"
+
+AdminMemberAdded = "Member added successfully."
+AdminMemberUpdated = "Member updated."
+AdminMemberRemoved = "Member removed."
+AdminAddNewMemberTitle = "Add a new member"
+
+AdminAliasesRevoke = "Revoke"
+AdminAliasesRevokeConfirmTitle = "Revoke Alias"
+AdminAliasesRevokeConfirmWelcome = "Are you sure you want to revoke this alias?"
+
+# invite dashboard
+##################
+
+AdminInvitesTitle = "Invites"
+AdminInvitesWelcome = "Create invite tokens for people who are not yet members of this room. On this page you can also see previously created invites that are still unclaimed by new members."
+AdminInvitesCreate = "Create new invite"
+AdminInvitesCreatedAtColumn = "Created at"
+AdminInvitesCreatorColumn = "Created by"
+AdminInvitesActionColumn = "Action"
+AdminInviteRevoke = "Revoke"
+
+InviteRevoked = "Invite Revoked."
+
+AdminInviteRevokeConfirmTitle = "Confirm invite revocation"
+AdminInviteRevokeConfirmWelcome = "Are you sure you want to remove this invite? If you already sent it out, they will not be able to use it."
+
+# TODO: add placeholder support to the template helpers (https://github.com/ssb-ngi-pointer/go-ssb-room/issues/60)
+AdminInviteCreatedBy = "Created by:"
+AdminInviteSuggestedAliasIs = "The suggested alias is:"
+AdminInviteSuggestedAliasIsShort = "Alias:"
+
+AdminInviteCreatedTitle = "Invite created successfully!"
+AdminInviteCreatedInstruct = "Now, copy the link below and paste it to a friend who you want to invite to this room."
+
+# public invites
+################
+
+InviteFacade = "Join Room"
+InviteFacadeTitle = "Join Room"
+InviteFacadeWelcome = "Welcome to {{.RoomTitle}}! You have permission to become a member of this room because someone has shared this invite with you."
+InviteFacadeInstruct = "To claim the invite, press the button below which will open a compatible SSB app, if it's installed."
+InviteFacadeJoin = "Join this room"
+InviteFacadeInstructQR = "If your SSB app is on another device, you can scan the following QR code to claim your invite on that device:"
+
+InviteFacadeFallbackInsertID = "Insert SSB ID"
+
+InviteInsertWelcome = "You can claim your invite by inserting your SSB ID below. After that, you'll be able to connect to the room in your SSB app."
+
+InviteConsumedTitle = "Invite accepted!"
+InviteConsumedWelcome = "You are now a member of this room. If you need a multiserver address to connect to the room, you can copy-paste the one below:"
+
+# alias resolution
+##################
+
+AliasResolutionInstruct = "To connect with them, press the button below which will open a compatible SSB app, if it's installed."
+AliasResolutionConnect = "Connect with"
+
+# ssb uri links
+###############
+
+SSBURIOpening = "Opening SSB app"
+SSBURIFailureWelcome = "Are you new to SSB? It seems you don't have an SSB app capable of understanding that link. You can install one of these apps:"
+SSBURIFailureInstallManyverse = "Install Manyverse"
+
+# notices (mini-CMS)
+####################
+
+NoticeEditTitle = "Edit Notice"
+NoticeList = "Notices"
+NoticeListWelcome = "Here you can manage the contents of the landing page and other important documents such as code of conduct and privacy policy."
+NoticeAddTranslation = "Add"
+NoticeUpdated = "Notice updated"
+
+NoticeCodeOfConduct = "Code of Conduct"
+NoticeNews = "News"
+NoticeDescription = "Description"
+NoticePrivacyPolicy = "Privacy Policy"
+
+# Plurals
+#########
+# These need to use this form and get {{.Count}}
+#   [Label]
+#   one = "singular"
+#   other = "{{.Count}} things"
+
+[MemberCount]
+description = "Number of members"
+one = "1 member"
+other =  "{{.Count}} members"
+
+[ListCount]
+description = "generic list"
+one = "There is one item on the List"
+other =  "There are {{.Count}} items on the List"
+
+[AdminRoomCount]
+description = "The number of people in a room"
+one = "There is one person in the Room"
+other =  "There are {{.Count}} people in the Room"
+
+[AdminInvitesCount]
+description = "the number of invites that are not yet claimed"
+one = "1 invite still unclaimed"
+other = "{{.Count}} invites still unclaimed"
